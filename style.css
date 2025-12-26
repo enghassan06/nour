@@ -35,6 +35,23 @@ h1 {
     rgb(138, 138, 138)
   );
   color: white;
+  animation: hover linear infinite 1s;
+}
+.buttom:hover h1 {
+  font-size: 25px;
+  color: white;
+  animation: none;
+}
+@keyframes hover {
+  0% {
+    transform: scale(1) rotateY(30deg);
+  }
+  50% {
+    transform: scale(1.2) rotateY(-30deg);
+  }
+  100% {
+    transform: scale(1) rotateY(0deg);
+  }
 }
 @keyframes translate {
   10% {
@@ -62,14 +79,14 @@ h1 {
   }
 }
 @media (max-width: 600px) {
-bady{
-over-flow:hidden;
-}
+  body {
+    overflow: hidden;
+  }
   .buttom {
     margin: 25% 17%;
     width: 500px;
   }
-h1{
-font-size:15px;
-}
+  h1 {
+    font-size: 15px;
+  }
 }
